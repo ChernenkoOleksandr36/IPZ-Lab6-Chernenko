@@ -1,0 +1,33 @@
+<project name="Lab_6" default="generate-javadoc" basedir=".">
+
+    <!-- Визначаємо змінні для документації та вихідних файлів -->
+
+    <property name="doc" value="Doc1"/>
+
+    <property name="sourceDir" value="src"/>
+
+    <!-- Ціль для генерації JavaDoc -->
+
+    <target name="generate-javadoc">
+
+        <!-- Створюємо директорію для JavaDoc -->
+
+        <mkdir dir="${doc}"/>
+
+        <!-- Генерація JavaDoc -->
+
+        <javadoc destdir="${doc}" sourcepath="${sourceDir}">
+
+            <!-- Визначаємо шлях до пакетів, які потрібно задокументувати -->
+
+            <packageset dir="${sourceDir}">
+
+                <include name="**/*.java"/>
+
+            </packageset>
+
+        </javadoc>
+
+    </target>
+
+</project>
