@@ -4,11 +4,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * Головний клас для демонстрації завдання 2.
+ * Головний клас для демонстрації завдання.
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("=== ЗАВДАННЯ 2: Ігровий простір ===\n");
+        System.out.println("=== Ігровий простір ===\n");
 
         try {
             createTestConfigFile("game_config.json");
